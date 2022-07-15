@@ -1,19 +1,18 @@
 {
-  "name": "aula-dio",
+  "name": "desafio-dio-typescript",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Resoluções dos desafios propostos",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server",
     "watch": "tsc --watch"
   },
-  "author": "",
+  "author": "Nickolas Silva (NaSilvaNick)",
   "license": "ISC",
   "dependencies": {
     "lite-server": "^2.6.1"
   },
   "devDependencies": {
-    "typescript": "^4.3.5"
+    "typescript": "^4.7.4"
   }
 }
