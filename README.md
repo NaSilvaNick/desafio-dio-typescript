@@ -2,10 +2,8 @@
 Esse repositório contém as soluções para os desafio de typescript propostos pela [Digital Inovation One](https://www.dio.me/).
 Os desafio foram feitos pelo [João Lira](https://github.com/lira1705) e o repositório original é esse [aqui](https://github.com/lira1705/mentoria-typescript). Vale a pena conferir e treinar!
 
----
-
 ## Arquivos
-O repositório original vem com os diretórios de `/desafios/ & /exemplos/ & /respostas/` mas eu prefiri manter somente os desafios e colocar as minhas soluções no diretórios: `/src/`, e configurar o projeto do meu proprio jeito.
+O repositório original vem com os diretórios de `/desafios/ & /exemplos/ & /respostas/` mas eu preferi manter somente os desafios e colocar as minhas soluções no diretórios: `/src/`, e configurar o projeto do meu proprio jeito.
 
 ## Configurações
 Para clonar o repositório:
