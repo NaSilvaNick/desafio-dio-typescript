@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">  
+    <title>Desafio TypeScript - 4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../../dist/solucao_desafio4/index.js" defer ></script>
+</head>
+<body>
+    <main>
+        <aside class="side">
+            <form id="auth-login" class="login">
+                <h4 class="login__title">Authentication</h4>
+                <input class="login__input" id="login" onkeyup="preencherLogin()"placeholder="Login">
+                <input class="login__input" id="senha" onkeyup="preencherSenha()" placeholder="Senha" type="password">
+                <!-- <input class="login__input" id="api-key" onkeyup="preencherChaveApi()" placeholder="Api Key" value="3f301be7381a03ad8d352314dcc3ec1d"> -->
+                <button id="login-button" class="login__btn" type="button" disabled>Login</button> 
+            </form>
+            <div id="auth-logout" class="logout hidden">
+                <button id="logout-button" class="logout__btn" type="button">Logout</button> 
+            </div>
+            <div id="lista-filmes" class="list hidden">
+                <h4 class="list__title">Lista de Filmes</h4>
+                <ul id="movie-list" class="list__list">
+                    <li class="list__item">
+                    </li>
+                </ul>
+                <div class="list__create">
+                    <button id="criar-listas-btn" class="create__btn">
+                        <span class="create__btn__span">Criar Lista</span>
+                    </button>
+                    <form id="criar-lista-form" class="create__form hidden">
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <section class="search">
+            <input class="search__input" id="search" placeholder="Escreva..." onkeyup="validaPesquisa()">
+            <button class="search__btn" id="search-button" onclick="pesquisar()">Pesquisar Filme</button>
+        </section>
+        <section class="informations">
+            <h1 class="informations__title" id="info-title">Populares</h1>
+            <p class="informations__description" id="info-desc">Os filmes mais populares do momento.</p>
+        </section>
+        <section class="filmes">
+            <div class="filmes__wrapper" id="filmes"></div>
+        </section>
+    </main> 
+    <button class="botao__voltar hidden" id="botao-voltar">voltar</button>
+    <div class="overlay hidden" id="overlay">
+        <div class="adicionar hidden" id="modal-adicionar">
+            <div class="adicionar__header">
+                <h3 class="header__text">Listas</h3>
+                <span class="header__line"></span>
+            </div>
+            <form id="overlay-form" class="adicionar__listas">
+            </form>
+            <div class="adicionar__btns" id="modal-adicionar-botoes">
+            </div>
+        </div>
+        <div class="block hidden" id="modal-block">
+            <h3 class="block__title">Faça login</h3>
+            <p class="block__text">Você deve se cadastrar no site <a href="https://www.themoviedb.org/"> The Movie DataBase</a> para poder se autenticar no app, criar listas e adicionar filmes nelas.</p>
+            <!-- <p class="block__text">Você também precisa acessar as configurações do The Movie DataBase e pegar a chave da API para se autenticar. Pode usar o link do repositório do projeto e o nome do projeto para as configurações.</p> -->
+            <button id="modal-block-sair" class="block__sair">Sair</button>
+        </div>
+    </div>
+</body>
+</html>
