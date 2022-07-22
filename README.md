@@ -3,7 +3,7 @@ Esse repositório contém as soluções para os desafio de typescript propostos 
 Os desafio foram feitos pelo [João Lira](https://github.com/lira1705) e o repositório original é esse [aqui](https://github.com/lira1705/mentoria-typescript). Vale a pena conferir e treinar!
 
 ## Arquivos
-O repositório original vem com os diretórios de `/desafios/ & /exemplos/ & /respostas/` mas eu preferi manter somente os desafios e colocar as minhas soluções no diretórios: `/src/`, e configurar o projeto do meu proprio jeito.
+O repositório original vem com os diretórios de `/desafios/ & /exemplos/ & /respostas/` mas eu preferi manter somente os desafios e colocar as minhas soluções no diretórios: `/src/`.
 
 ## Configurações
 Para clonar o repositório:
@@ -41,9 +41,12 @@ Para acessar a pagina: http://localhost:3000/
 │   ├── solucao_desafio2
 │   │   └── app.ts
 │   ├── solucao_desafio3
-│   │   └── app.ts
+│   │   ├── index.html
+│   │   └── index.ts
 │   └── solucao_desafio4
-│       └── app.ts
+│       ├── index.html
+│       ├── index.ts
+│       └── style.css
 │
 ├── index.html
 ├── package.json
